@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="5dp"
+    android:background="#e8e8e5" >
+
+    <!-- for RelativeLayout android:background="@drawable/checkout_header_gradient" -->
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/order_payment"
+            android:textColor="#FFFFFF"
+            android:singleLine="true"
+            android:lines="1"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="right|center_vertical"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="fill_parent"
+                android:background="#f0eded" />
+
+
+            <Button
+                android:id="@+id/save_btn"
+                android:layout_width="120dp"
+                android:layout_height="fill_parent"
+                android:text="@string/validate_stripe"
+                android:textColor="@color/Black0Percent"
+                android:gravity="center"
+                android:ellipsize="marquee"
+                android:textSize="18sp"
+                android:singleLine="true"
+                android:lines="1"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/p_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:orientation="vertical" >
+		<TextView 
+		    android:id="@+id/txt_payment"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:padding="10dp"
+		    android:lines="2"
+		    android:maxLines="2"
+		    android:textColor="#000"
+		    android:background="#88777777"
+		    android:text="@string/text_payment"/>
+		
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <TableLayout
+                android:id="@+id/table_recap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp" >
+
+            </TableLayout>
+            
+        </ScrollView>
+
+        <ImageView
+            android:id="@+id/accepted_cards"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:antialias="true"
+            android:scaleType="fitXY" />
+
+        <com.paymentkit.views.FieldHolder
+            android:id="@+id/field_holder"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp" >
+        </com.paymentkit.views.FieldHolder>
+    </LinearLayout>
+    <!-- For ImageView   android:src="@drawable/checkout_payment_icons" -->
+
+</RelativeLayout>

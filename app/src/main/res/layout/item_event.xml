@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="5dp" >
+
+    <!--
+            ImageView
+            android:id="@+id/itineraireBtn"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:focusable="false"
+            android:layout_alignParentRight="true"
+            android:src="@android:drawable/ic_menu_mylocation" /
+    -->
+
+    <RelativeLayout
+        android:id="@+id/imageLayout"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        android:gravity="top"
+        android:layout_gravity="top" >
+
+        <ImageView
+            android:id="@+id/imageEvent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="false"
+            android:src="@android:drawable/ic_menu_mylocation" />
+        
+		<TextView
+            android:id="@+id/dayNumber"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="#ffffff"
+            android:focusable="false"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            android:text="77" />
+        
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:focusable="false"
+        android:layout_gravity="top"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/content_event"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:text=" Premier resto "
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/content_event_discript"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="clip_horizontal"
+            android:ellipsize="end"
+            android:maxLines="10"
+            android:focusable="false"
+            android:gravity="center_horizontal|left"
+            android:lineSpacingExtra="5sp"
+            android:paddingLeft="10dp"
+            android:text=" description resto "
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="action_settings">Paramètres</string>
+    <string name="hello_world">Salut monde!</string>
+    <string name="share">Partager</string>
+    <string name="Galery">Galerie de photo</string>
+     <string name="galeryPhotos">"Galerie de photos"</string>
+    <string name="waiting">"Chargement..."</string>
+    <string name="input_id">"Id du menu"</string>
+    <string name="action_label_refresh">Rafraichir Menu</string>
+    <string name="splashText">"Saisissez l\'identifiant de l'application que vous souhaitez tester."</string>
+    <string name="photos">" photos"</string>
+    <string name="toast_galery">APPUYEZ SUR LES IMAGES POUR ZOOMER</string>
+    <string name="your_selection">"Votre sélection"</string>
+    <string name="delete_selection">Valider votre panier</string>
+    <string name="total">Total : </string>
+    <string name="multiple_choices">Ajoutez un ou plusieurs produits à votre commande :</string>
+    <string name="product_choices">Choisissez vos produits</string>
+    <string name="cart_name">Ma commande</string>
+    <string name="cart_nmbr">%1$d produits</string>
+    <string name="start_date">du</string>
+    <string name="end_date">au</string>
+    <string name="validate_cart">Valider</string>
+    <string name="validate_form">Envoyer</string>
+    <string name="cancel_cart">Annuler</string>
+    <string name="choose_cart">Choisir</string>
+    <string name="date_form_cart">"JJ/MM/AAAA"</string>
+    <string name="time_form_cart">"HH:mm"</string>
+    <string name="next">Suivant</string>
+    <string name="back">Revenir</string>
+    <string name="validate_vote">Suivant</string>
+    <string name="continue_command">Continuer</string>
+    <string name="formule">Formule</string>
+    <string name="validity">Jours de disponibilité</string>
+    <string name="people">Pour %1$d personne(s)</string>
+    <string name="offer_gift">Offrez ce cadeau</string>
+    <string name="order">Commandez en ligne</string>
+    <string name="all_boxs">TOUS LES COFFRETS</string>
+    <string name="choix_incomplet">Veuillez sélectionner un article pour chaque type de produit</string>
+    <string name="french">Français</string>
+    <string name="english">Anglais</string>
+    <string name="spanish">Espagnol</string>
+    <string name="russian">Russie</string>
+    <string name="italian">Italique</string>
+    <string name="german">Allemand</string>
+    <string name="error">Erreur</string>
+    <string name="downloading_content">Téléchargement des contenus…</string>
+    <string name="downloading_images">"Téléchargement des images…"</string>
+    <string name="starting">Démarrage…</string>
+    <string name="validation_formule">Valider ma sélection</string>
+    <string name="ingredient_popup_title">Ajouter à un élément existant</string>
+    <string name="survey_submit">Veuillez saisir ces informations pour envoyer vos réponses :</string>
+    <string name="survey_vote">Sélectionner pour donner votre avis :</string>
+    <string name="contact_title">Contactez-nous</string>
+    <string name="show_itinerary">"Afficher l'itinéraire..."</string>
+    <!-- Status -->
+    <string name="status_new">Nouvelle</string>
+    <string name="status_pending">En cours</string>
+    <string name="status_treated">Traitée</string>
+    <string name="status_denied">Refusée</string>
+    <string name="time_when_done_now"><i>%1$s à l\'instant</i></string>
+    <string name="time_when_done_minutes"><i>il y a %1$s minutes</i></string>
+    <string name="time_when_done_hours"><i>il y a %1$s heures</i></string>
+    <string name="time_when_done_days"><i>il y a %1$s jours</i></string>
+    <string name="time_when_done_yesterday"><i>%1$s hier</i></string>
+    <string name="detail_product_room_service"><i>%1$s € (Quantité %2$s)</i></string>
+    <string name="error_connecting">Erreur de connexion internet</string>
+    <string name="error_connecting_message">SVP vérifiez que vous êtes connecté(e) à internet et puis réessayez</string>
+    <string name="survey_vote_incomplete_message">Veuillez remplir tous les champs</string>
+    <string name="survey_thanks">"Nous vous remercions pour votre retour. L’équipe"</string>
+    <string name="survey_connection_error">"On a pas pu envoyer tes réponses, SVP de réessayer plus tard."</string>
+    <string name="search_map">Rechercher</string>
+    <string name="search_map_postal">"Recherche par code postal..."</string>
+
+    <!-- After form validation (cart and form ...) La commande a bien été envoyer,    La commande n'a pas pu passer! réessayez-->
+    <string name="command_validated">"Nous vous remercions et vous informons que les règlements se font également par carte bancaire"</string>
+    <string name="command_not_validated">"Impossible d'envoyer votre demande veuillez essayer plus tard"</string>
+    <string name="msg_sent">"Message envoyé"</string>
+    <string name="msg_not_sent">"Le formulaire n'a pas pu être envoyer! réessayez"</string>
+    <string name="starting_app_failed">"Echec de la création"</string>
+    <string name="add_card">Ajouter une carte de crédit</string>
+    <string name="order_payment">Paiement de la commande</string>
+    <string name="validate_stripe">Valider</string>
+    <string name="monday">Lundi</string>
+    <string name="tuesday">Mardi</string>
+    <string name="wednesday">Mercredi</string>
+    <string name="thursday">Jeudi</string>
+    <string name="friday">Vendredi</string>
+    <string name="saturday">Samedi</string>
+    <string name="sunday">Dimanche</string>
+    <string name="time_error_msg">Vous ne pouvez pas choisir une heure passée.</string>
+    <string name="time_error_btn">"Changer d\'heure..."</string>
+    <string name="time_error_title">Période non autorisée</string>
+    <string name="empty_cart">"Pour passer une commande ajoutez des produits."</string>
+    <string name="close_dialog">Fermer</string>
+    <string name="payment_stripe_title">"Ne peut pas être ajouté à la sélection."</string>
+    <string name="payment_stripe_msg">"Veuillez vider votre sélection ou terminer votre commande actuelle (avec paiement) avant de continuer."</string>
+    <string name="no_payment_stripe_msg">"Veuillez vider votre sélection ou terminer votre commande actuelle avant d'ajouter des produits nécessitant un paiement."</string>
+    <string name="text_order_period">"Vous pouvez seulement commander entre %1$s et %2$s les %3$s."</string>
+    
+    <string name="text_order_period_day">"Vous pouvez seulement commander %1$s jours d'aujourd'hui."</string>
+    <string name="shipping">"Frais de port"</string>
+    <string name="text_payment">"Payez avec votre carte de crédit pour valider votre commande :"</string>
+    <string name="contact_us">"Contactez-nous"</string>
+    <string name="error_title_add_sup_without_base">"Ne peut pas être ajouté à la sélection"</string>
+    <string name="error_msg_add_sup_without_base">"Vous devez avoir un produit de la catégorie %1$s déjà sélectionné avant de pouvoir ajouter celui çi."</string>
+    <string name="error_btn_add_sup_without_base">"Voir catégorie"</string>
+    
+    <string name="monday_abbr">Lun</string>
+    <string name="tuesday_abbr">Mar</string>
+    <string name="wednesday_abbr">Mer</string>
+    <string name="thursday_abbr">Jeu</string>
+    <string name="friday_abbr">Ven</string>
+    <string name="saturday_abbr">Sam</string>
+    <string name="sunday_abbr">Dim</string>
+    
+    
+    <string name="weekly">Hebdo</string>
+    <string name="monthly">Mensuel</string>
+        <string name="popup_website">"Visiter le site web..."</string>
+    <string name="geoLockMsg">"Vous n’êtes pas autorisé à afficher ce contenu"</string>
+
+</resources>

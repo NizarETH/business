@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dividedScreenListItem"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".NavItemListActivity"
+ >
+    
+	<TextView 
+	    android:id="@+id/utilInfo"
+	    android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:text=" Info Utile"
+    	android:layout_alignParentLeft="true"
+    	android:gravity="center_vertical"
+	    />
+	
+	<com.euphor.paperpad.widgets.ArrowImageView
+	    android:id="@+id/listItemFlech"
+	    android:layout_width="28dp"
+    	android:layout_height="28dp"
+    	android:layout_alignParentRight="true"
+    	android:layout_centerVertical="true"
+    	/>
+	
+</RelativeLayout>

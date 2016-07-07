@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/CartEnvelop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/TitreLLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="20dp" >
+
+        <LinearLayout
+            android:id="@+id/imgTitleCartHolder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/imgTitleCart"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bt_cart_more" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/titleCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/your_selection"
+            android:textColor="#520210"
+            android:textSize="@dimen/titleSize" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TitreLLayout" >
+
+        <LinearLayout
+            android:id="@+id/cartTagContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+           <include layout="@layout/space_dummy" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/empty_cart_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="15dp"
+        android:background="#10000000"
+        android:gravity="center"
+        android:lines="5"
+        android:maxLines="5"
+        android:padding="5dp"
+        android:singleLine="false"
+        android:text="@string/empty_cart"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#777777"
+        android:visibility="invisible" />
+
+    <View
+        android:id="@+id/viewDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignTop="@+id/ScrollView"
+        android:background="#777777" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutSummery"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:gravity="center_horizontal|top"
+        android:layout_alignBottom="@+id/ScrollView"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:paddingLeft="20dp" >
+
+            <TextView
+                android:id="@+id/TotalLabel"
+                style="@android:style/TextAppearance.Large"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="@string/total" />
+
+            <com.euphor.paperpad.widgets.AutoResizeTextView
+                android:id="@+id/sum"
+                style="@android:style/TextAppearance.Large"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="0.00" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/viewDivider2"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#777777" />
+
+        <LinearLayout
+            android:id="@+id/validateCartLL"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="false"
+            android:gravity="center_horizontal|top"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:paddingTop="10dp" >
+
+            <LinearLayout
+                android:id="@+id/subValidateCartLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#777777"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    android:id="@+id/validate_cartTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/delete_selection"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/subtitleSize" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    
+    <View
+            android:id="@+id/test_view"
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:layout_alignParentBottom="true"
+            android:background="#777777" />
+
+</RelativeLayout>

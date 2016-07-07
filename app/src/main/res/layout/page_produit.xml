@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/productHolder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+			
+            <include layout="@layout/title_page_produit_layout"/>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:id="@+id/img_nav"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:baselineAligned="false" >
+				<LinearLayout
+                    android:id="@+id/backPrevious"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="1dp"
+                    android:gravity="center" >
+
+                    <com.euphor.paperpad.widgets.ArrowImageView
+                        android:id="@+id/PreviousIMG"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:rotation="180"
+                        android:scaleType="centerCrop" />
+                </LinearLayout>
+                <RelativeLayout
+                    android:id="@+id/ImageProductHolder"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="@dimen/page_horizontal_image_height"
+                    android:layout_gravity="center"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/ProductIMG"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop" />
+                    
+				
+				<com.euphor.paperpad.widgets.AViewFlipper 
+				    android:id="@+id/viewFlipper"
+				    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    
+                    >    
+				    
+				</com.euphor.paperpad.widgets.AViewFlipper>
+                    
+                    <LinearLayout
+                        android:id="@+id/GaleryContainer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center"
+                        android:layout_margin="50dp"
+                        android:gravity="center"
+                        android:visibility="gone" >
+
+                        <!-- To be visible when link with gallery added -->
+
+                        <include layout="@layout/galery_btn" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <LinearLayout
+                    android:id="@+id/backNext"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center" >
+
+                    <com.euphor.paperpad.widgets.ArrowImageView
+                        android:id="@+id/NextIMG"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:scaleType="centerCrop" />
+                </LinearLayout>
+            </LinearLayout>
+
+                <include layout="@layout/commun_info_product" />
+            </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

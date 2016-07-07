@@ -1,0 +1,194 @@
+buildscript {
+    repositories {
+        jcenter()
+        maven { url 'https://maven.fabric.io/public' }
+    }
+    dependencies {
+//        classpath 'com.github.triplet.gradle:play-publisher:1.1.2'
+        classpath 'com.android.tools.build:gradle:2.1.0-alpha4'
+        // The Fabric Gradle plugin uses an open ended version to react
+        // quickly to Android tooling updates
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+
+apply plugin: 'com.android.application'
+//apply plugin: 'com.github.triplet.play'
+apply plugin: 'io.fabric'
+
+repositories {
+    mavenCentral();
+    maven { url "https://jitpack.io" }
+    maven { url 'https://maven.fabric.io/public' }
+}
+/*
+play {
+    //Paperpad-0df7eb6de5c0.p12  <<====>> 315637457665-96v76utu2gm6cgt7jau3rhvnvbu6thdp@developer.gserviceaccount.com
+    //Paperpad Business-3b91895cadc6.p12  <<====>> 75389784733-2qt0qnjjcfvljum02kvop6d37uqvvgkg@developer.gserviceaccount.com
+    //Paperpad Business 2-60b815253825.p12  <<====>> 510202641371-5dd0um5asrpupacngh6t21sjdkc15uqj@developer.gserviceaccount.com
+    serviceAccountEmail ='75389784733-2qt0qnjjcfvljum02kvop6d37uqvvgkg@developer.gserviceaccount.com'
+    pk12File = file('Paperpad Business-3b91895cadc6.p12')
+    errorOnSizeLimit = false
+    track ='production'// 'production' // or 'rollout' or 'beta' or 'alpha'
+    //userFraction = 0.1 // only necessary for 'rollout', in this case default is 0.1
+    uploadImages = true
+}*/
+
+
+android {
+
+    dexOptions {
+
+        preDexLibraries = false
+        javaMaxHeapSize "4g"
+    }
+    lintOptions {
+        abortOnError false
+        checkReleaseBuilds false
+    }
+
+    aaptOptions {
+        useNewCruncher false
+        noCompress 'png', 'jpg'
+    }
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+
+    useLibrary 'org.apache.http.legacy'
+
+
+    signingConfigs {
+        debug_config {
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+            storeFile file('debug.keystore')
+            storePassword 'android'
+        }
+        //keystore_
+        release_config {
+            keyAlias 'euphor-paperpad'
+            keyPassword 'paperpadeuphor2013'
+            storeFile file('release.keystore')
+            storePassword 'paperpadeuphor2013'
+        }
+        //close_
+
+    }
+    compileSdkVersion 23
+    buildToolsVersion '23.0.2'
+
+    defaultConfig {
+        applicationId "com.euphor.paperpad"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 146 //code_to_change
+        versionName '0.9.9' //value_to_change
+        // Enabling multidex support.
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release_config
+        }
+        debug {
+            debuggable true
+            signingConfig signingConfigs.debug_config
+            renderscriptDebuggable false
+        }
+    }
+    productFlavors {
+        Business {
+            applicationId "com.euphor.paperpad"
+            manifestPlaceholders = [activityLabel: "Business", gcmPackage: "com.euphor.paperpad"]
+            minSdkVersion 15
+            targetSdkVersion 23
+            versionCode 146 //code_to_change
+            versionName '0.9.9' //value_to_change
+            /* manifestPlaceholders = [crashlyticsApiKey: "fe4680d06d3dce0537bab77fc97ff48bb7803a609133c91336ac0c285e50d9dd0fa5"]*/
+        }
+        BusinessApps {
+            applicationId "com.paperpad.GrandMonarque"
+            minSdkVersion 15
+            targetSdkVersion 23
+            versionCode 146 //code_to_change
+            versionName '0.9.9' //value_to_change
+            manifestPlaceholders = [crashlyticsApiKey: "fe4680d06d3dce0537bab77fc97ff48bb7803a609133c91336ac0c285e50d9dd0fa5"]
+            ext.betaDistributionNotifications = true
+            ext.betaDistributionEmails = "outoun.uness@gmail.com, ettaheri.nizar@gmail.com, marion.mathez@paperpad.fr"
+            ext.betaDistributionReleaseNotes = "Release 3Notes for this test build."
+        }
+
+    }
+    sourceSets {
+
+
+        Business {
+            manifest.srcFile 'Business/AndroidManifest.xml'
+        }
+
+        BusinessApps {
+            manifest.srcFile 'BusinessApps/AndroidManifest.xml'
+            assets.srcDirs = ['BusinessApps/assets']
+        }
+
+
+    }
+
+
+}
+configurations {
+    //   all*.exclude group: 'com.android.support', module: 'support-v4'
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    //compile 'com.android.support:appcompat-v7:22.1.1'
+    compile 'com.android.support:appcompat-v7:23.1.0'
+    // Crashlytics Kit
+    compile('com.crashlytics.sdk.android:crashlytics:2.5.2@aar') {
+        transitive = true
+    }
+    compile 'com.mcxiaoke.volley:library:1.0.17'
+    //compile 'com.squareup.picasso:picasso:2.3.4'
+    compile 'com.github.bumptech.glide:glide:3.6.1'
+    compile 'com.github.bumptech.glide:volley-integration:1.3.1@aar'
+    //compile files('libs/volley.jar')
+    /*{ exclude module: 'support-v4'} { exclude module: 'appcompat-v7' }*/
+    compile('com.google.android.gms:play-services:7.0.0') { exclude module: 'support-v4' }
+    compile 'com.github.moondroid.coverflow:library:1.0'
+    //compile 'com.google.android:multidex:0.133'
+    compile files('libs/json-simple-1.1.1.jar')
+    //compile files('libs/ormlite-android-4.45.jar')
+    //compile files('libs/ormlite-core-4.45.jar')
+    //compile files('libs/jackson-databind-2.1.4.jar')
+    //compile files('libs/jackson-core-2.1.4.jar')
+    //compile files('libs/jackson-annotations-2.1.4.jar')
+    compile files('libs/httpmime-4.1.jar')
+    compile files('libs/YouTubeAndroidPlayerApi.jar')
+    compile files('libs/paralloid.jar')
+    compile files('libs/paralloidviews.jar')
+    compile files('libs/jsr250-api-1.0.jar')
+    compile files('libs/panoramagl.jar')
+    compile files('libs/httpmime-4.1.jar')
+    compile files('libs/gcm.jar')
+    compile files('libs/gcm-src.jar')
+    compile files('libs/coverflowlibrary.jar')
+    compile files('libs/notificationcompat2-1.1.2.jar')
+    compile files('libs/realm-0.80.0.jar')
+    // compile project(':android-rss-reader-library-master')
+    compile project(':facebook-android-sdk-3-6-0')
+    compile project(':headerlistview')
+    compile project(':forecast-master')
+
+    compile project(':library-sliding-menu')
+    compile project(':paymentkit_lib')
+    compile project(':progresswheel-master')
+    compile project(':stripe-android-master')
+    compile project(':uil_library')
+    compile project(':rssreaderlibrary')
+}

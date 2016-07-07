@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+  <string name="app_name">"Deux Clefs"</string>
+  <bool name="is_product_version">true</bool>
+  <string name="prod_or_sand">production</string>
+  <string name="application_id">1254</string>
+  <string name="sender_id">75389784733</string>
+  <string name="google_maps_key_apps">AIzaSyAopEiFdVAyHusKpp7gU4-KOFQFgXYSjMI</string>
+</resources>

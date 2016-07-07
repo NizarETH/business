@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>        
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical" >
+    
+
+	<LinearLayout
+	    android:id="@+id/validation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_cancel_form"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:textSize="12sp"
+            android:text="@string/cancel_cart" />
+
+        <TextView
+            android:id="@+id/labelPanier"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.6"
+            android:gravity="center"
+            android:ellipsize="marquee"
+            android:textSize="16sp"
+            android:text="Validez votre Panier"
+ />
+
+        <Button
+            android:id="@+id/btn_valide_form"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:layout_margin="5dp"
+            android:text="@string/validate_cart" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center_vertical" >
+
+        <TextView
+            android:id="@+id/tv_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:textSize="@dimen/medium_text_size" />
+    </LinearLayout>
+
+    <com.euphor.paperpad.widgets.ObservableScrollView
+        android:id="@+id/sv_form_cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/title_form_holder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|center_vertical" >
+
+                <com.euphor.paperpad.widgets.AutoResizeTextView
+                    android:id="@+id/subTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center|center_horizontal"
+                android:orientation="horizontal" >
+<!-- @dimen/form_layout_width" -->
+                <TableLayout
+                    android:id="@+id/tableForm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@android:color/black"
+                    android:minWidth="350dp"
+                    android:orientation="vertical"
+                    android:shrinkColumns="1"
+                    android:stretchColumns="1" >
+                </TableLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.euphor.paperpad.widgets.ObservableScrollView>
+
+    
+
+</LinearLayout>
+
+<!-- style="@android:style/Widget.Holo.Light.Button.Borderless.Small" -->

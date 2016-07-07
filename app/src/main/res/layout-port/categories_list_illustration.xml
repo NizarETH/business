@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container_category_illustration"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+	<ImageView 
+	    android:id="@+id/image_category"
+	    android:layout_width="0dp"
+	    android:layout_weight="0.30"
+	    android:layout_height="match_parent"
+	    android:scaleType="centerCrop" 
+	    android:visibility="gone"/>
+    
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>
+    
+
+</LinearLayout>

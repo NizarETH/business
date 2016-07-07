@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/informationHolder"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+	<LinearLayout
+        android:id="@+id/PricesHolderAbove"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <HorizontalScrollView
+            android:id="@+id/hsvPrices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" >
+
+            <LinearLayout
+                android:id="@+id/PricesHolder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp" >
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/tempLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+                android:padding="15dp"
+        android:layout_toStartOf="@+id/LLRelatedItems" >
+
+        <WebView
+            android:id="@+id/LongDescWV"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <LinearLayout 
+            android:id="@+id/truncate_holder"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:gravity="bottom|center_horizontal"
+            android:layout_marginRight="5dp"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/truncate_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@+id/LongDescWV"
+                android:src="@drawable/ic_truncate"
+                android:visibility="gone" />
+
+        </LinearLayout>
+        
+    </LinearLayout>
+
+    
+
+    <LinearLayout
+        android:id="@+id/LLRelatedItems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+    <!-- </RelativeLayout> -->
+
+</LinearLayout>

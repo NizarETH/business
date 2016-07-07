@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:divider="?android:attr/dividerHorizontal"
+    android:orientation="horizontal"
+    android:showDividers="middle"
+    tools:context=".MainActivity" >
+
+    <!--
+    This layout is a two-pane layout for the NavItems
+    master/detail flow. See res/values-large/refs.xml and
+    res/values-sw600dp/refs.xml for an example of layout aliases
+    that replace the single-pane version of the layout with
+    this two-pane version.
+
+    For more on layout aliases, see:
+    http://developer.android.com/training/multiscreen/screensizes.html#TaskUseAliasFilters
+    -->
+    
+	<!--LinearLayout 
+	     android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        
+     <TextView 
+        android:id="@+id/titleDividedListItem" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:text=" Enseignements utiles "/>   
+	    
+    <fragment
+        android:id="@+id/navitem_list"
+        android:name="com.euphor.paperpad.fragments.CategoryFragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:layout="@android:layout/list_content" /-->
+    
+    
+
+	<ListView 
+    	android:id="@+id/listOfSplit"
+    	android:layout_width="0dp"
+    	android:layout_height="match_parent"
+    	android:layout_weight="1" >
+	</ListView>
+    
+	<!--/LinearLayout-->
+	
+	
+    <FrameLayout
+        android:id="@+id/navitem_detail_container"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2.2" />
+
+</LinearLayout>

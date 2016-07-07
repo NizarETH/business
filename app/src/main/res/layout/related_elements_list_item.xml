@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/imgCategoryContainer"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/imgCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <com.euphor.paperpad.widgets.AutoResizeTextView
+            android:id="@+id/TVTitleCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            style="@android:style/TextAppearance.Medium"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/TVrelatedDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:clickable="false"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:textStyle="italic"
+            android:singleLine="false"
+            style="@android:style/TextAppearance.Small" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/imgArrowContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center|right"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="5dp">
+
+        <com.euphor.paperpad.widgets.ArrowImageView
+            android:id="@+id/imgArrow"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:scaleType="centerCrop" />
+    </LinearLayout>
+
+</LinearLayout>

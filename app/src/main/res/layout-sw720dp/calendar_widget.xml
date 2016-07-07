@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="200dp"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/date_widget"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.4"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mercredi"
+            android:textSize="16sp"  />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13"
+            android:textStyle="bold"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="novembre"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+	<View 
+	    android:id="@+id/separator_widget_calendar"
+	    android:layout_width="1px"
+	    android:layout_height="match_parent"
+	    android:background="#777777"/>
+    <LinearLayout
+        android:id="@+id/time_widget"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.6"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="05"
+            android:textStyle="bold"
+            android:textSize="40sp" />
+        
+        <TextView
+            android:id="@+id/txt_points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textStyle="bold"
+            android:textSize="40sp" />
+        <TextView
+            android:id="@+id/txt_minutes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22"
+            android:textStyle="bold"
+            android:textSize="40sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

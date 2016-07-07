@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/backHolder"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/popover"
+    android:focusable="false"
+    android:maxWidth="@dimen/infoWindow_height"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <!-- android:maxWidth="@dimen/infoWindow_height" -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" >
+
+        <TextView
+            android:id="@+id/mapBubbleTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:lines="2"
+            android:text="@string/app_name"
+            android:textSize="26sp" />
+
+        <ImageView
+            android:id="@+id/closeInfoWindow"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:visibility="gone"
+            android:src="@drawable/close" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/mapBubbleImg"
+        android:layout_width="@dimen/infoWindow_height"
+        android:layout_height="@dimen/infoWindow_height"
+        android:minWidth="@dimen/infoWindow_height"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/mapBubbleDiscript"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:maxLines="3"
+            android:maxWidth="@dimen/infoWindow_height"
+            android:text="@string/app_name"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/tvButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:ellipsize="marquee"
+            android:gravity="center_vertical"
+            android:textSize="20sp" />
+
+        <com.euphor.paperpad.widgets.ArrowImageView
+            android:id="@+id/arrowInfoWindow"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/itinerenceLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/imgItinerence"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@android:drawable/ic_menu_mylocation" />
+
+        <TextView
+            android:id="@+id/mapBubbleItinerence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            android:gravity="center"
+            android:linksClickable="true"
+            android:maxLines="1"
+            android:text="Afficher l&apos;itinéraire "
+            android:textSize="22sp" />
+    </LinearLayout>
+
+</LinearLayout>

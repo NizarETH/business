@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/backHolderMapOption"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:orientation="vertical" >
+    
+   <LinearLayout
+        android:id="@+id/buttonHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/tvButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:ellipsize="marquee" />
+
+        <com.euphor.paperpad.widgets.ArrowImageView
+            android:id="@+id/arrowInfoWindow"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/itinerenceLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp" 
+        >
+
+        <ImageView 
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@android:drawable/ic_menu_mylocation"
+            />
+        <TextView
+            android:id="@+id/mapBubbleItinerence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:clickable="true"
+            android:linksClickable="true"
+            android:maxLines="1"
+            android:maxWidth="@dimen/infoWindow_height"
+            android:text="Afficher l'itinérance "
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

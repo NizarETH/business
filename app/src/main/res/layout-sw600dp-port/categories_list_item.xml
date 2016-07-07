@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/imgCategory"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/TVTitleCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:gravity="center_vertical"
+            style="@android:style/TextAppearance.Large"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TVDescCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/darker_gray"
+            style="@android:style/TextAppearance.Small" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/priceBtnHolder"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:orientation="horizontal" >
+
+        <include
+            layout="@layout/price" />
+         <include
+            layout="@layout/price2" />
+          <include
+            layout="@layout/price3" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/imgArrowContainer"
+        android:layout_width="50dp"
+        android:layout_height="120dp"
+        android:gravity="center|right" >
+
+        <com.euphor.paperpad.widgets.ArrowImageView
+            android:id="@+id/imgArrow"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:scaleType="centerCrop" />
+    </LinearLayout>
+
+</LinearLayout>

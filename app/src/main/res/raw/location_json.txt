@@ -1,0 +1,138 @@
+{"locations_groups": [
+
+    {
+        "id": 3,
+        "title": "Restaurants",
+        "pin_icon": "icon/group_16/icon_2_16.png",
+        "pin_color": "23288A",
+        "display_in_captions": true,
+        "hide": false,
+        "locations": [
+            {
+                "id": 3,
+                "title": "Premier resto",
+                "image": "http://backoffice.paperpad.fr/medias/1/optimized/1homme_1femme_hotel.jpg",
+                "coordinates": {
+                    "latitude": 47.415137,
+                    "longitude": -1.4949759
+                },
+                "button_text": "details",
+                "text": "",
+                "postal_code": "12000",
+                "display_details": false,
+                "is_default": false
+            },
+            {
+                "id": 3,
+                "title": "Un hotel",
+                "image": "http://backoffice.paperpad.fr/medias/1/optimized/2_cafe.jpg",
+                "coordinates": {
+                    "latitude": 47.315137,
+                    "longitude": -1.6439759
+                },
+                "button_text": "details",
+                "text": "",
+                "postal_code": "",
+                "display_details": true,
+                "is_default": false,
+                "link_type": "web",
+                "link_web_url": "http://paperpad.fr"
+            },
+            {
+                "id": 3,
+                "title": "Autre hotel",
+                "coordinates": {
+                    "latitude": 47.415137,
+                    "longitude": -1.739759
+                },
+                "button_text": "Details",
+                "text": "",
+                "postal_code": "",
+                "display_details": true,
+                "is_default": false
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Hotels",
+        "pin_icon": "icon/group_17/icon_1_17.png",
+        "pin_color": "CF1348",
+        "display_in_captions": true,
+        "hide": false,
+        "locations": [
+            {
+                "id": 4,
+                "title": "Un autre bar",
+                "coordinates": {
+                    "latitude": 47.615137,
+                    "longitude": -1.739759
+                },
+                "button_text": "",
+                "text": "",
+                "postal_code": "",
+                "display_details": false,
+                "is_default": false
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "title": "Sorties",
+        "pin_icon": "icon/group_19/icon_0_19.png",
+        "pin_color": "858F39",
+        "display_in_captions": true,
+        "hide": true,
+        "locations": [
+            {
+                "id": 10,
+                "title": "Un bar",
+                "image": "http://backoffice.paperpad.fr/medias/1/optimized/1bouteille_bouchons.jpg",
+                "coordinates": {
+                    "latitude": 47.425137,
+                    "longitude": -1.719759
+                },
+                "button_text": "",
+                "text": "",
+                "postal_code": "123",
+                "display_details": false,
+                "is_default": false,
+                "link_type": "page",
+                "link_page_id": 1387
+            },
+            {
+                "id": 10,
+                "title": "un bar de test",
+                "coordinates": {
+                    "latitude": 48.8793887,
+                    "longitude": 2.2976622
+                },
+                "button_text": "Bar Test",
+                "text": "",
+                "postal_code": "",
+                "display_details": false,
+                "is_default": false,
+                "link_type": "page",
+                "link_page_id": 1314
+            },
+            {
+                "id": 10,
+                "title": "bar imaginaire",
+                "coordinates": {
+                    "latitude": 48.87456987,
+                    "longitude": 2.4628547
+                },
+                "button_text": "",
+                "text": "",
+                "postal_code": "",
+                "display_details": false,
+                "is_default": false,
+                "link_type": "web",
+                "link_web_url": "http://www.youtube.com/watch?v=yMjem_VhIeI"
+            }
+        ]
+    }
+
+  ]
+
+}

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:id="@+id/contactFormLayout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.60"
+        android:orientation="vertical" >
+
+        <!-- include layout="@layout/title_strip"/ -->
+
+        <LinearLayout
+            android:id="@+id/TitleHolder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+            
+           <Button
+                android:id="@+id/btn_cancel_form"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="@string/cancel_cart"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/TitleTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_weight="4"
+                android:singleLine="true"
+                android:text="@string/contact_title"
+                android:textSize="@dimen/subtitleListSize"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_valide_form"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="@string/validate_form" />
+        </LinearLayout>
+
+        <com.euphor.paperpad.widgets.ObservableScrollView
+            android:id="@+id/sv_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/title_form_holder"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:layout_marginLeft="10dp" >
+
+                    <TextView
+                        android:id="@+id/subTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tableFormHolder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TableLayout
+                        android:id="@+id/tableForm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:divider="@android:color/black"
+                        android:gravity="center_vertical"
+            			android:layout_gravity="center_vertical"
+            			android:shrinkColumns="0,1,2"
+                        android:orientation="vertical" >
+                    </TableLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </com.euphor.paperpad.widgets.ObservableScrollView>
+
+
+
+        <!--LinearLayout
+            android:id="@+id/transparentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#30000000"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_cancel_form"
+                style="@android:style/Widget.Holo.Light.Button.Borderless.Small"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/cancel_cart"
+                android:visibility="invisible" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#40777777" />
+
+            <Button
+                android:id="@+id/btn_valide_form"
+                style="@android:style/Widget.Holo.Light.Button.Borderless.Small"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/validate_form" /
+            >
+        </LinearLayout-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/imageFormLayout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:layout_weight="0.40" >
+
+        <ImageView
+            android:id="@+id/imageForm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/tennis_balls" />
+    </LinearLayout>
+
+</LinearLayout>

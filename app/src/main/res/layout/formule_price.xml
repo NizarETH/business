@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/priceTVContainer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_margin="10dp"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/priceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#777777"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/priceLabelTV"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/validation_formule"
+            android:textStyle="bold"
+            style="@android:style/TextAppearance.Large" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/priceValue"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#FF0000"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/priceValueTV"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="normal"
+            android:text="25£"
+            style="@android:style/TextAppearance.Medium" />
+    </LinearLayout>
+
+</LinearLayout>

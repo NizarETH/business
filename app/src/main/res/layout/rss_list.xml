@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/llSVFeedChoicesHolder"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" >
+
+        <HorizontalScrollView
+            android:id="@+id/SVFeedChoicesHolder"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/feedChoicesHolder"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:orientation="horizontal" >
+            </LinearLayout>
+                        
+        </HorizontalScrollView>
+
+        <ImageView
+            android:id="@+id/show_widget"
+            android:layout_width="20dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:visibility="visible" />
+
+        <!--ImageView
+            android:id="@+id/hide_widget"
+            android:layout_width="20dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:visibility="gone" /-->
+        
+        
+
+
+        <com.euphor.paperpad.widgets.ArrowImageView 
+                       android:id="@+id/hide_widget"
+            android:layout_width="20dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:rotation="-90"
+            android:visibility="gone" />
+            
+
+        
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/ListRSS"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </ListView>
+
+</LinearLayout>

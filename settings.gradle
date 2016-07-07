@@ -1,0 +1,10 @@
+include ':app', ':facebook-android-sdk-3-6-0', ':library-sliding-menu', ':stripe-android-master', ':progresswheel-master', ':forecast-master', ':uil_library', ':headerlistview', ':paymentkit_lib', ':rsslibrary', ':rssreaderlibrary'
+project(':rsslibrary').projectDir = new File('rssreaderlibrary')
+project(':facebook-android-sdk-3-6-0').projectDir = new File('facebook-android-sdk-3.6.0/facebook')
+project(':library-sliding-menu').projectDir = new File('SlidingMenu-master/library')
+project(':progresswheel-master').projectDir = new File('ProgressWheel-master')
+project(':stripe-android-master').projectDir = new File('stripe-android-master/stripe')
+project(':forecast-master').projectDir = new File('forecast-android-master/forecast')
+project(':uil_library').projectDir = new File('Android-Universal-Image-Loader-master/library')
+project(':headerlistview').projectDir = new File('HeaderListView-master/HeaderListView')
+project(':paymentkit_lib').projectDir = new File('PaymentKit-Droid-master/pk-library')

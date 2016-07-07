@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/link_widget_tv"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:ellipsize="marquee"
+        android:gravity="center_vertical|left"
+        android:layout_marginLeft="14dp"
+        android:textStyle="bold"
+        android:text="TextView jjksck kdnkj d jidjsij ijisj ijijiji jijfidji jdijsjidie nicef hheifivcji jei ijsijvdoqjijqdvj  i iqfj iqji jidj ij iqfj ijiqfdjo jqjoi jisjdf idsfhbv qey gfbuqhd uchuch uihcu hdiwufhcvuj" />
+    
+    <com.euphor.paperpad.widgets.ArrowImageView 
+        android:id="@+id/arrow_widget_link"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginRight="10dp"/>
+
+</LinearLayout>

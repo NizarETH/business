@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:coverflow="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+
+
+
+    <com.euphor.paperpad.widgets.CoverFlow
+        android:id="@+id/coverFlow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="0dp"
+        ></com.euphor.paperpad.widgets.CoverFlow>
+
+<!--    <it.moondroid.coverflow.components.ui.containers.FeatureCoverFlow
+        android:id="@+id/coverflow"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        coverflow:coverHeight="450dp"
+        coverflow:coverWidth="380dp"
+        coverflow:maxScaleFactor_="1.5"
+        coverflow:reflectionGap="0px"
+        coverflow:rotationThreshold="0.8"
+        coverflow:scalingThreshold="0.8"
+        coverflow:spacing="0.6" />-->
+
+    <TextView
+            android:id="@+id/titleFlow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="top|center_horizontal"
+            android:gravity="top|center_horizontal"
+            android:textAppearance="@android:style/TextAppearance.Large"
+        android:text="Cover Title"/>
+
+</LinearLayout>

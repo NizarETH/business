@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+        <ImageView
+        android:id="@+id/imageAgendaAcceuil"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="false"
+        android:scaleType="centerCrop" />
+    
+        
+    <LinearLayout 
+                android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        
+     <View
+        android:id="@+id/startView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/agendaListContainer"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_alignStart="@id/startView"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/agendaTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="40dp"
+            android:gravity="center_horizontal"
+            android:text=""
+            android:textSize="28sp" />
+
+        <LinearLayout
+            android:id="@+id/backChoices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center" >
+
+            <HorizontalScrollView
+                android:id="@+id/SVchoicesHolder"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_gravity="center_vertical"
+                android:padding="5dp"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:id="@+id/choicesHolder"
+                    android:layout_width="50dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </ListView>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/endView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.4"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/simplePage"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2.2"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/agendaListContainer"
+        android:visibility="gone"
+         >
+
+        <TextView
+            android:id="@+id/eventDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Le vendredi 77 janvier 1977"
+            android:textColor="#0000ff"
+            android:textSize="18sp" />
+
+        <FrameLayout
+            android:id="@+id/navitem_detail_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<resources>
+
+    
+	<dimen name="cart_width">120dp</dimen>
+	<dimen name="where_iam">40dp</dimen>
+	
+	<dimen name="titleSize">16sp</dimen> 
+    <dimen name="subtitleSize">14sp</dimen>
+    <dimen name="textSize">12sp</dimen>
+    <dimen name="titleListSize">15sp</dimen> 
+    <dimen name="subtitleListSize">13sp</dimen> 
+    <dimen name="priceTV">13sp</dimen>
+    <dimen name="padding_form">1dp</dimen>
+	
+</resources>

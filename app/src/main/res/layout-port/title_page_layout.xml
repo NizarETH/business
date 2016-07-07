@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/titleProductHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/titleProductTV"
+                style="@android:style/TextAppearance.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:lines="2"
+                android:maxLines="2"
+                android:text="Empty title"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/close_open"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp" >
+
+                <ImageView
+                    android:id="@+id/close_infos"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:rotation="90"
+                    android:src="@drawable/ic_exit"
+                    android:visibility="gone" />
+
+                <com.euphor.paperpad.widgets.ArrowImageView
+                    android:id="@+id/toggle_infos"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:rotation="-90"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/dividerExtra"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#F0E9E4" />
+
+    <LinearLayout
+        android:id="@+id/navigationHolderForStrokePort"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" >
+
+        <RelativeLayout
+            android:id="@+id/navigationHolderPort"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.25px"
+        android:background="#F0E9E4" />
+
+    <LinearLayout
+        android:id="@+id/navigationHolderForStroke"
+        android:layout_width="match_parent"
+        android:layout_height="42dp" >
+
+        <RelativeLayout
+            android:id="@+id/navigationHolder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:id="@+id/Category"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical|left" >
+
+                <TextView
+                    android:id="@+id/categorieTV"
+                    style="@android:style/TextAppearance.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical|left"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:textStyle="bold" />
+
+
+                <View
+                    android:id="@+id/dividerExtra1"
+                    android:layout_width="0.25px"
+                    android:layout_height="match_parent"
+                    android:background="#F0E9E4" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/shareHolder"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_toRightOf="@+id/Category"
+                android:gravity="center" >
+
+                <!--
+                     <View
+                    android:id="@+id/divider3"
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:background="#F0E9E4" /-->
+
+
+                <ImageView
+                    android:id="@+id/shareIMG"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="5dp" />
+
+                <TextView
+                    android:id="@+id/shareLabelTV"
+                    style="@android:style/TextAppearance.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/share"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/divider4"
+                    android:layout_width="0.25px"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:background="#F0E9E4" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/navButtons"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="0dp" >
+
+                <View
+                    android:id="@+id/divider6"
+                    android:layout_width="0.25px"
+                    android:layout_height="match_parent"
+                    android:background="#F0E9E4" />
+
+                <LinearLayout
+                    android:id="@+id/backPrevious"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="0dp"
+                    android:gravity="center" >
+
+                    <com.euphor.paperpad.widgets.ArrowImageView
+                        android:id="@+id/PreviousIMG"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center"
+                        android:rotation="180"
+                        android:scaleType="centerCrop" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/divider5"
+                    android:layout_width="0.25px"
+                    android:layout_height="match_parent"
+                    android:background="#F0E9E4" />
+
+                <LinearLayout
+                    android:id="@+id/backNext"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center" >
+
+                    <com.euphor.paperpad.widgets.ArrowImageView
+                        android:id="@+id/NextIMG"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center"
+                        android:scaleType="centerCrop" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="0.25px"
+        android:background="#F0E9E4" />
+
+</LinearLayout>

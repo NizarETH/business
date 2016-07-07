@@ -1,0 +1,58 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="titleSize">32sp</dimen> 
+    <dimen name="subtitleSize">28sp</dimen>
+    <dimen name="textSize">24sp</dimen>
+    <dimen name="titleListSize">20sp</dimen> 
+    <dimen name="subtitleListSize">16sp</dimen> 
+    <dimen name="priceTV">20sp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="width_tab_fragment">100dp</dimen>
+    <dimen name="height_tab_fragment">55dp</dimen>
+    <dimen name="height_tab_fragment_bottom">60dp</dimen>
+    <dimen name="home_grid_title_size">16sp</dimen>
+    <dimen name="progress_action_padding">8dp</dimen>
+    <dimen name="width_splash_screen_enter_id">200dp</dimen>
+    <dimen name="default_padding">10dp</dimen>
+    <dimen name="small_padding">5dp</dimen>
+    <dimen name="height_tv_home_grid">60dp</dimen>
+    <dimen name="height_album_grid_item">110dp</dimen>
+    <dimen name="square_album_grid_item">100dp</dimen>
+    <dimen name="relative_title_strip_height">30dp</dimen>
+    <dimen name="swipe_aligned_image_height">340dp</dimen>
+    <dimen name="infoWindow_height">160dp</dimen>
+	<dimen name="width_cart">300dp</dimen>
+	<dimen name="form_layout_width">350dp</dimen>
+	<dimen name="page_horizontal_image_height">250dp</dimen>
+	<dimen name="paddingBox">5dp</dimen>
+	<dimen name="box_command_online">55dp</dimen>
+	<dimen name="padding_HSV_port_box">100dp</dimen>
+	<dimen name="cart_width">160dp</dimen>
+	<dimen name="where_iam">100dp</dimen>
+	<dimen name="padding_form">5dp</dimen>
+	
+	<dimen name="small_text_size">14sp</dimen>
+	<dimen name="large_text_size">22sp</dimen>
+	<dimen name="medium_text_size">18sp</dimen>
+	<dimen name="extralarge_text_size">24sp</dimen>
+	<dimen name="extrasmall_text_size">10sp</dimen>
+	<dimen name="extramedium_text_size">16sp</dimen>
+	<dimen name="popup_map_title">24sp</dimen>
+	<dimen name="popup_map_descript">14sp</dimen>
+	
+	<!-- sliding menu width -->
+	<dimen name="slidingmenu_offset">60dp</dimen>
+	
+	<dimen name="order_dim">120dp</dimen>
+	
+	<dimen name="window_width">320dp</dimen>
+	<dimen name="window_height">480dp</dimen>
+
+    <!-- List Item Max and Min Height -->
+
+    <dimen name="list_item_min_height">48dp</dimen>
+    <dimen name="list_item_max_height">96dp</dimen>
+    <dimen name="list_item_set_height">64dp</dimen>
+</resources>

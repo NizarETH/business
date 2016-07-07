@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="440dp"
+    android:layout_height="200dp"
+    android:baselineAligned="true"
+    android:orientation="horizontal"
+    android:padding="20dp"
+    android:weightSum="2" >
+
+    <LinearLayout
+        android:id="@+id/ContactLeft"
+        android:layout_width="0dp"
+        android:layout_height="180dp"
+        android:layout_marginRight="40dp"
+        android:layout_weight="1"
+        android:background="#777777"
+        android:gravity="center"
+        android:padding="1px" >
+
+        <LinearLayout
+            android:id="@+id/ContactLeftInner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/IVContactLeft"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:src="@drawable/tel" />
+
+            <TextView
+                android:id="@+id/TVContactLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="bottom|center_horizontal"
+                android:text="Télephone"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/TVDescContactLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="top|center_horizontal"
+                android:maxLines="3"
+                android:textSize="14dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ContactRight"
+        android:layout_width="0dp"
+        android:layout_height="180dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:background="#777777"
+        android:gravity="center"
+        android:padding="1px" >
+
+        <LinearLayout
+            android:id="@+id/ContactRightInner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/IVContactRight"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:src="@drawable/tel" />
+
+            <TextView
+                android:id="@+id/TVContactRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="bottom|center_horizontal"
+                android:text="Télephone"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/TVDescContactRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="top|center_horizontal"
+                android:maxLines="3"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

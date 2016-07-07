@@ -1,0 +1,22 @@
+<resources>
+
+    <!--
+         Customize dimensions originally defined in res/values/dimens.xml (such as
+         screen margins) for sw600dp devices (e.g. 7" tablets) here.
+    -->
+    <dimen name="swipe_aligned_image_height">340dp</dimen>
+    <dimen name="form_layout_width">500dp</dimen>
+    <dimen name="page_horizontal_image_height">300dp</dimen>
+    <dimen name="padding_HSV_port_box">0dp</dimen>
+    <dimen name="cart_width">200dp</dimen>
+    <dimen name="where_iam">50dp</dimen>
+    <dimen name="padding_form">20dp</dimen>
+    <dimen name="popup_map_title">26sp</dimen>
+    <dimen name="popup_map_descript">15sp</dimen>
+    
+    <dimen name="window_width">450dp</dimen>
+	<dimen name="window_height">500dp</dimen>
+	
+	<dimen name="title_item_category">15sp</dimen>
+
+</resources>

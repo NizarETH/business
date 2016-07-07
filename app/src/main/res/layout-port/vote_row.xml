@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/vote_row"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="30dp"
+    android:layout_gravity="left"
+    android:gravity="left" >
+
+    <LinearLayout
+        android:id="@+id/vote_row_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/vote_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:layout_marginLeft="12dp"
+            android:orientation="vertical" >
+            
+            <com.euphor.paperpad.widgets.AutoResizeTextView
+                android:id="@+id/vote_label_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email :" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vote_input"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="left"
+            android:layout_gravity="left"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </LinearLayout>
+
+</TableRow>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/innerPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/LLInfoProduct"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/informationSpace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <include layout="@layout/title_page_layout" />
+
+                <include layout="@layout/commun_info_holder" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    
+        <View 
+        android:id="@+id/slideInnerPageDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+
+    <RelativeLayout
+        android:id="@+id/verticalImageHolder"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/ProductIMG"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+        
+                        <com.euphor.paperpad.widgets.AViewFlipper
+                    android:id="@+id/viewFlipper"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                </com.euphor.paperpad.widgets.AViewFlipper>
+
+        <LinearLayout
+            android:id="@+id/galeryBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            android:visibility="gone" >
+
+            <!-- To be visible when link with gallery added -->
+
+            <include layout="@layout/galery_btn" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

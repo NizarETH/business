@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="width_tab_fragment">100dp</dimen>
+    <dimen name="height_tab_fragment_bottom">60dp</dimen>
+    <dimen name="height_tab_fragment">55dp</dimen>
+    <dimen name="titleSize">24sp</dimen> 
+    <dimen name="home_grid_title_size">20sp</dimen>
+    <dimen name="titleListSize">16sp</dimen> 
+    <dimen name="subtitleListSize">16sp</dimen> 
+    <dimen name="subtitleSize">18sp</dimen>
+    <dimen name="textSize">12sp</dimen>
+    <dimen name="priceTV">12sp</dimen>
+    <dimen name="width_splash_screen_enter_id">350dp</dimen>
+    <dimen name="default_padding">15dp</dimen>
+    <dimen name="small_padding">5dp</dimen>
+    <dimen name="height_tv_home_grid">100dp</dimen>
+	<dimen name="height_album_grid_item">160dp</dimen>
+	<dimen name="square_album_grid_item">200dp</dimen>
+	<dimen name="relative_title_strip_height">38dp</dimen>
+	<dimen name="swipe_aligned_image_height">450dp</dimen>
+	<dimen name="width_cart">340dp</dimen>
+	<dimen name="form_layout_width">500dp</dimen>
+	<dimen name="page_horizontal_image_height">300dp</dimen>
+	<dimen name="padding_HSV_port_box">100dp</dimen>
+	<dimen name="cart_width">200dp</dimen>
+	<dimen name="where_iam">20dp</dimen>
+	<dimen name="popup_map_title">24sp</dimen>
+	<dimen name="popup_map_descript">15sp</dimen>
+	
+	
+	<dimen name="slidingmenu_offset">450dp</dimen>
+	
+	<dimen name="window_width">700dp</dimen>
+	<dimen name="window_height">800dp</dimen>
+	
+		<dimen name="title_item_category">12sp</dimen>
+	
+</resources>

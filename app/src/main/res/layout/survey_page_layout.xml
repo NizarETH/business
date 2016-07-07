@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:gravity="top"
+                android:orientation="vertical" >
+
+                <ScrollView
+                    android:id="@+id/sv_survey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:id="@+id/title_form_holder"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:gravity="left|center_vertical" >
+
+                            <com.euphor.paperpad.widgets.AutoResizeTextView
+                                android:id="@+id/subTitle_vote"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:text="" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/tableFormHolder_survey"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|center_vertical"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginTop="5dp"
+                            android:gravity="left|center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TableLayout
+                                android:id="@+id/tableForm_vote"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:divider="@android:color/black"
+                                android:orientation="vertical"
+                                android:shrinkColumns="*" >
+                            </TableLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/a_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp" />
+
+                    </LinearLayout>
+                </ScrollView>
+
+                <View
+                    android:id="@+id/b_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#40777777"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/sv_survey"
+                    android:gravity="right|center_vertical"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/btn_valide_vote_holder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right|center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="5dp" >
+
+                        <TextView
+                            android:id="@+id/btn_valide_vote"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:gravity="right|center_vertical"
+                            android:text="@string/validate_vote"
+                            android:textSize="24sp"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+                        <com.euphor.paperpad.widgets.ArrowImageView
+                            android:id="@+id/nextArrow"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

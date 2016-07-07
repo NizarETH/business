@@ -1,0 +1,20 @@
+begin
+1612
+end
+keystore_1
+      release_config {
+          keyAlias 'uness_droid'
+          keyPassword 'paperpadeuphor2014'
+          storeFile file('paperpadkeystore')
+          storePassword 'paperpadeuphor2014'
+      }
+      //close_1
+
+keystore_2
+      release_config {
+          keyAlias 'euphor-paperpad'
+          keyPassword 'paperpadeuphor2013'
+          storeFile file('release.keystore')
+          storePassword 'paperpadeuphor2013'
+      }
+      //close_2

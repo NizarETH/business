@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/form_row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_gravity="left"
+    android:gravity="left|center_vertical"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/form_row_holder"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <LinearLayout
+            android:id="@+id/form_label"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:gravity="left|center_vertical"
+            android:orientation="vertical"
+            android:layout_margin="5dp" >
+            
+            <TextView 
+                android:id="@+id/form_label_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:gravity="left|center_vertical"
+                style="@style/TextAppearance.EditEvent_Label"
+                android:textSize="14sp"
+                android:text="Email :" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/form_input"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_margin="5dp" >
+        </LinearLayout>
+    </LinearLayout>
+
+</TableRow>

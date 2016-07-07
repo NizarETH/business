@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/item_id"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="#ffffff"
+         >        
+
+    
+            <!--ImageView
+            android:id="@+id/itineraireBtn"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:focusable="false"
+            android:layout_alignParentRight="true"
+            android:src="@android:drawable/ic_menu_mylocation" /-->
+    
+    	<LinearLayout 
+    	    android:layout_width="match_parent"
+    	    android:layout_height="match_parent"
+    	    android:layout_alignParentLeft="true"
+    	    android:focusable="false"
+    	    android:clickable="false"
+    	    android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/content_lieu"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:gravity="left"
+                android:text=" Premier resto "
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                />
+            
+            <TextView
+                android:id="@+id/content_lieu_discript"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:lineSpacingExtra="5sp"
+                android:focusable="false"
+                android:layout_gravity="clip_horizontal"
+                android:gravity="center_horizontal|left"
+                android:text=" description resto "
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#000000"
+                android:paddingLeft="10dp"
+                />
+            
+            </LinearLayout>
+
+    </RelativeLayout>

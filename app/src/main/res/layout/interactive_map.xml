@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ctc="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeContainer"
+    xmlns:app="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <com.euphor.paperpad.widgets.zoomableview.ZoomViewScalable
+        android:id="@+id/zoomable"
+        app:mapref="@drawable/chicken_cartoon_500"
+        style="@style/demo_zoom_default"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerInside"
+        />
+
+</RelativeLayout>

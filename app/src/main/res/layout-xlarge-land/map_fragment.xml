@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    
+    <RelativeLayout
+        android:id="@+id/mapHolder_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/second_bar"
+
+        >
+        
+    <com.euphor.paperpad.widgets.MapWrapperLayout
+        android:id="@+id/mapHolder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         >
+
+        <TextView
+            android:id="@+id/streetviewBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:drawableLeft="@drawable/streetview"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:visibility="gone"
+            android:text="STREET VIEW"
+            android:layout_margin="20dp"/>
+    </com.euphor.paperpad.widgets.MapWrapperLayout>
+    
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/list_search_layout"
+        android:layout_width="400dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <EditText
+            android:id="@+id/code_postal_search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/boder_edit_postal_code"
+            android:gravity="center"
+            android:hint="Recherche par code postal..."
+            android:textColorHint="#888F5B5B"
+            android:textSize="22sp"
+            android:textStyle="italic" />
+
+        <com.applidium.headerlistview.HeaderListView
+            
+            android:id="@+id/carte_listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </com.applidium.headerlistview.HeaderListView>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/second_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:weightSum="1"
+        android:layout_toRightOf="@id/list_search_layout"
+        android:orientation="horizontal" >
+
+
+
+            <LinearLayout
+                android:id="@+id/list_search_icon_container"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#611F5F"
+                android:clickable="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:visibility="visible" >
+
+                <com.euphor.paperpad.widgets.ArrowImageView
+                    android:id="@+id/list_search_icon"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="center"
+                    android:clickable="false"
+                    android:focusable="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/legend"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_toEndOf="@id/list_search_icon"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <HorizontalScrollView
+                    android:id="@+id/svLegend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" >
+
+                    <LinearLayout
+                        android:id="@+id/mapTitleHolder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

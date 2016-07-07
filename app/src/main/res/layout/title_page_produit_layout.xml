@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/titleProductHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" >
+
+            <TextView
+                android:id="@+id/titleProductTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_centerInParent="true"
+                android:textSize="30sp"
+                android:text="Titre Page Produit"
+                android:textStyle="bold" />
+            
+            <RelativeLayout
+                android:id="@+id/close_open"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp" >
+
+                <ImageView
+                    android:id="@+id/close_infos"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:rotation="90"
+                    android:src="@drawable/ic_exit"
+                    android:visibility="gone" />
+                <com.euphor.paperpad.widgets.ArrowImageView 
+                   	android:id="@+id/toggle_infos"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:rotation="-90"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <View
+        android:id="@+id/dividerExtra"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F0E9E4"
+        android:visibility="gone" />
+    <LinearLayout
+        android:id="@+id/navigationHolderForStrokePort"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/navigationHolderPort"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" >
+
+            
+            <LinearLayout
+                android:id="@+id/Category"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center"
+                android:gravity="center_vertical" >
+				<TextView 
+				    android:id="@+id/categorieTV"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_gravity="center"
+				    android:layout_marginLeft="5dp"
+				    android:layout_marginRight="5dp"
+				    android:gravity="center_vertical|left"
+				    android:text="testetsteste"
+				    android:textSize="@dimen/subtitleSize"/>
+				<View
+                    android:id="@+id/dividerExtra1"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#F0E9E4" />
+                
+            </LinearLayout>
+           
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F0E9E4"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/navigationHolderForStroke"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/navigationHolder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            
+            <LinearLayout
+                android:id="@+id/shareHolder"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center"
+                android:gravity="center" >
+
+               <!--  <View
+                    android:id="@+id/divider3"
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:background="#F0E9E4" /> -->
+                
+                <ImageView
+                    android:id="@+id/shareIMG"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp" />
+
+                <TextView
+                    android:id="@+id/shareLabelTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/share" />
+
+                <View
+                    android:id="@+id/divider4"
+                    android:layout_width="1dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_height="match_parent"
+                    android:background="#F0E9E4" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/navButtons"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="1dp" >
+				<View
+                    android:id="@+id/divider6"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#F0E9E4" />
+				<View
+                    android:id="@+id/divider5"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#F0E9E4" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F0E9E4" 
+        android:visibility="gone" />
+
+</LinearLayout>

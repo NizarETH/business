@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="action_settings">"Настройки"</string>
+    <string name="hello_world">Salut monde!</string>
+    <string name="share">"Доля"</string>
+    <string name="Galery">"Галерея фотографий"</string>
+    <string name="galeryPhotos">"Галерея фотографий"</string>
+    <string name="waiting">"Загрузка..."</string>
+    <string name="input_id">"Id du menu"</string>
+    <string name="action_label_refresh">Rafraichir Menu</string>
+    <string name="splashText">"Type down the id of the application you want to test."</string>
+    <string name="photos">" фотографии"</string>
+    <string name="toast_galery">CLICK ON THE PICTURES TO ZOOM IN</string>
+    <!--
+    string name="your_selection">"Ваш выбор"</string>
+    <string name="delete_selection">"Подтвердить свою корзину"</string>
+    <string name="total">"Сумма : "</string>
+    <string name="multiple_choices">"Добавить один или несколько продуктов для вашей команды : "</string>
+    <string name="product_choices">"Добавить вариант..."</string
+    -->
+    <string name="your_selection">"Your selection"</string>
+    <string name="delete_selection">Validate your cart</string>
+    <string name="total">Sum : </string>
+    <string name="multiple_choices">Add one or multiple products to your command :</string>
+    <string name="product_choices">Add an option...</string>
+    <string name="cart_name">Моя корзина</string>
+    <string name="cart_nmbr">%1$d продукты</string>
+    <string name="start_date">"от"</string>
+    <string name="end_date">"до"</string>
+    <string name="validate_cart">"Представьте"</string>
+    <string name="validate_form">"Отправить"</string>
+    <string name="cancel_cart">"Отменить"</string>
+    <string name="choose_cart">"Выберите"</string>
+    <string name="date_form_cart">"JJ/MM/AAAA"</string>
+    <string name="time_form_cart">"HH:mm"</string>
+    <string name="next">"Следующая"</string>
+    <string name="back">"Вернуться"</string>
+    <string name="validate_vote">"Следующая"</string>
+    <string name="continue_command">"Продолжить"</string>
+    <string name="formule">"Формула"</string>
+    <string name="validity">"Наличие дней"</string>
+    <!--string name="people">Для %1$d человека (людей)</string>
+    <string name="offer_gift">"Предложение этот дар"</string>
+    <string name="order">"Заказать онлайн"</string>
+    <string name="all_boxs">"ВСЕ коробок"</string-->
+        <!--string name="continue_command">Continue</string>
+    <string name="formule">Formula</string>
+    <string name="validity">Availability days</string-->
+    <string name="people">For %1$d person(people)</string>
+     <string name="offer_gift">Offer this gift</string>
+    <string name="order">Order online</string>
+        <string name="all_boxs">ALL BOXS</string>
+    <!-- string name="choix_incomplet">"Пожалуйста, выберите статью для каждого вида продукции"</string -->
+    <string name="choix_incomplet">Please select an article for every type of product</string>
+    <string name="french">"Французский"</string>
+    <string name="english">"Английский"</string>
+    <string name="spanish">"Испанский"</string>
+    <string name="russian">"Русский"</string>
+    <string name="italian">"Курсив"</string>
+    <string name="german">"Немецкий"</string>
+    <string name="error">"Ошибка"</string>
+    <!--
+    string name="downloading_content">"Загрузка содержимого..."</string>
+    <string name="downloading_images">"Загрузка изображений..."</string>
+    <string name="starting">"Начиная ..."</string>
+    <string name="validation_formule">"Подтвердить мой выбор"</string>
+    <string name="ingredient_popup_title">"Добавить в существующий элемент"</string>
+    <string name="survey_submit">"Пожалуйста, заполните эту форму, чтобы отправить нам ваши ответы : "</string>
+    <string name="survey_vote">"Напишите ваше мнение : "</string
+    -->
+
+    <string name="downloading_content">Downloading content…</string>
+    <string name="downloading_images">Downloading images…</string>
+    <string name="starting">Starting…</string>
+    <string name="validation_formule">Validate my selection</string>
+    <string name="ingredient_popup_title">Add to an existent element</string>
+    <string name="gcm_unregistered">From GCM: device successfully unregistered!</string>
+    <string name="gcm_message">From GCM: you got message!</string>
+    <string name="gcm_error">From GCM: error (%1$s).</string>
+    <string name="gcm_recoverable_error">From GCM: recoverable error (%1$s).</string>
+    <string name="gcm_deleted">From GCM: server deleted %1$d pending messages!</string>
+    <string name="contact_title">"Связаться с-нами"</string>
+    <!-- Status -->
+    <string name="status_new">"Новый"</string>
+    <string name="status_pending">"В ожидании"</string>
+    <string name="status_treated">"Обработанная"</string>
+    <string name="status_denied">"Отказано"</string>
+    <string name="time_when_done_now"><i>%1$s seconds ago</i></string>
+    <string name="time_when_done_minutes"><i>%1$s minutes ago</i></string>
+    <string name="time_when_done_hours"><i>%1$s hours ago</i></string>
+    <string name="time_when_done_days"><i>%1$s days ago</i></string>
+    <string name="time_when_done_yesterday"><i>%1$s yesterday</i></string>
+    <string name="detail_product_room_service"><i>%1$s € (Quantity %2$s)</i></string>
+    <string name="error_connecting">Internet Connection Error</string>
+    <string name="error_connecting_message">Please connect to working Internet connection and retry</string>
+    <string name="survey_vote_incomplete_message">Please fill in all questions</string>
+    <string name="survey_thanks">We thank you for your feedback. The team.</string>
+    <string name="survey_connection_error">"We couldn't send your feedback, please retry later."</string>
+    <string name="app_id">1441005719447576</string>
+    <string name="search_map">Search</string>
+    <string name="search_map_postal">Search by postal code...</string>
+
+    <!-- After form validation (cart and form ...) La commande a bien été envoyer,    La commande n'a pas pu passer! réessayez -->
+    <!-- After form validation (cart and form ...) The order has been sent, The order has not been sent -->
+    <string name="command_validated">"Thank you and inform you that the regulations can be done by credit card"</string>
+    <string name="command_not_validated">"Failed to send your request please try again later"</string>
+    <string name="msg_sent">"Message sent"</string>
+    <string name="msg_not_sent">"Form not sent! retry."</string>
+    <string name="euro">€</string>
+    <string name="starting_app_failed">"Creation fail"</string>
+    <string name="add_card">Add Card</string>
+    <string name="order_payment">Order payment</string>
+    <string name="validate_stripe">Validate</string>
+    <string name="monday">"Понедельник"</string>
+    <string name="tuesday">"Вторник"</string>
+    <string name="wednesday">"Среда"</string>
+    <string name="thursday">"Четверг"</string>
+    <string name="friday">"Пятница"</string>
+    <string name="saturday">"Суббота"</string>
+    <string name="sunday">"Воскресенье"</string>
+    <string name="time_error_msg">You can\'t choose a time before now.</string>
+    <string name="time_error_btn">Choose another period</string>
+    <string name="close_dialog">Close</string>
+    <string name="time_error_title">Disallowed period</string>
+    <string name="payment_stripe_title">"Can't add this to the selection."</string>
+    <string name="payment_stripe_msg">"Please empty your selection or finish your current order needing payment before continuing."</string>
+    <string name="no_payment_stripe_msg">"Please empty your selection or finish your current order before adding products needing payment."</string>
+    <string name="show_itinerary">"Show Itinerary..."</string>
+    <string name="empty_cart">"To order please select your items."</string>
+    <string name="non_authrized_period">"Non authorized period"</string>
+    <string name="text_order_period">"You can only order between %1$s and %2$s every %3$s."</string>
+    <string name="text_order_period_day">"You can only order %1$s from today."</string>
+    <string name="shipping">"Shipping"</string>
+    <string name="text_payment">"Pay with your credit card to validate your order :"</string>
+    <string name="error_title_add_sup_without_base">"Cannot be added"</string>
+    <string name="error_msg_add_sup_without_base">"You must have a product from category %1$s before adding this one to your selection."</string>
+    <string name="error_btn_add_sup_without_base">"Go to the category"</string>
+    <string name="monday_abbr">Mon</string>
+    <string name="tuesday_abbr">Tue</string>
+    <string name="wednesday_abbr">Wed</string>
+    <string name="thursday_abbr">Thu</string>
+    <string name="friday_abbr">Fri</string>
+    <string name="saturday_abbr">Sat</string>
+    <string name="sunday_abbr">Sun</string>
+    <string name="weekly">Weekly</string>
+    <string name="monthly">Monthly</string>
+    <string name="popup_website">"Visit web site..."</string>
+
+</resources>

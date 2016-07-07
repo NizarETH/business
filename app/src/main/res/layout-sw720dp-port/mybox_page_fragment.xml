@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myboxPortraitSV"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.fragments.MyBoxPageFragment" >
+
+    <LinearLayout
+        android:id="@+id/contactsPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/default_padding" >
+
+        <LinearLayout
+            android:id="@+id/illustrations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <LinearLayout
+                android:id="@+id/myboxInfoTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/myboxInfoTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    style="@android:style/TextAppearance.Large" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/picHolder"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_marginBottom="10dp" >
+
+                <ImageView
+                    android:id="@+id/imageBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/commandHolder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/offrez"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/offer_gift"
+                    android:textSize="@dimen/subtitleListSize"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="5dp" >
+
+                    <TextView
+                        android:id="@+id/personne"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@+id/boxPrice"
+                        android:text="@string/people"
+                        android:textSize="@dimen/textSize" />
+
+                    <TextView
+                        android:id="@+id/boxPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="@string/people"
+                        android:textSize="@dimen/subtitleSize" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/itemOrder"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/box_command_online"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/paddingBox" >
+
+                    <LinearLayout
+                        android:id="@+id/orderLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/box_command_online"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                    	android:layout_alignParentBottom="true"
+                        android:layout_toLeftOf="@+id/imgArrowContainer"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <com.euphor.paperpad.widgets.AutoResizeTextView
+                            android:id="@+id/orderOnline"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:gravity="center_vertical"
+                            android:text="@string/order"
+                            android:textSize="@dimen/titleListSize"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/imgArrowContainer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/box_command_online"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical" >
+
+                        <com.euphor.paperpad.widgets.ArrowImageView
+                            android:id="@+id/imgArrow"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/validityHolder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/jours_de_disponibilite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/validity"
+                    android:textSize="@dimen/subtitleListSize"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/availability"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/monday"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/mondayTxt"
+                            android:layout_width="40dp"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Mon"
+                            android:textAppearance="@android:attr/textAppearanceSmall" />
+
+                        <ImageView
+                            android:id="@+id/imgMonday"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/unavailable" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="#777777"
+                        android:paddingBottom="2dp"
+                        android:paddingTop="2dp" />
+
+                    <LinearLayout
+                        android:id="@+id/tuesday"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/tuesdayTxt"
+                            android:layout_width="40dp"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Tue"
+                            android:textAppearance="@android:attr/textAppearanceSmall" />
+
+                        <ImageView
+                            android:id="@+id/imgTuesday"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/unavailable" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="#777777"
+                        android:paddingBottom="2dp"
+                        android:paddingTop="2dp" />
+
+                    <LinearLayout
+                        android:id="@+id/wednesday"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/wednesdayTxt"
+                            android:layout_width="40dp"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Wed"
+                            android:textAppearance="@android:attr/textAppearanceSmall" />
+
+                        <ImageView
+                            android:id="@+id/imgWednesday"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/unavailable" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="#777777"
+                        android:paddingBottom="2dp"
+                        android:paddingTop="2dp" />
+
+                    <LinearLayout
+                        android:id="@+id/thursday"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/thursdayTxt"
+                            android:layout_width="40dp"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Thu"
+                            android:textAppearance="@android:attr/textAppearanceSmall" />
+
+                        <ImageView
+                            android:id="@+id/imgThursday"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/unavailable" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="#777777"
+                        android:paddingBottom="2dp"
+                        android:paddingTop="2dp" />
+
+                    <LinearLayout
+                        android:id="@+id/friday"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/fridayTxt"
+                            android:layout_width="40dp"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Mon"
+                            android:textAppearance="@android:attr/textAppearanceSmall" />
+
+                        <ImageView
+                            android:id="@+id/imgFriday"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/unavailable" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="#777777"
+                        android:paddingBottom="2dp"
+                        android:paddingTop="2dp" />
+
+                    <LinearLayout
+                        android:id="@+id/saturday"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/saturdayTxt"
+                            android:layout_width="40dp"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Sat"
+                            android:textAppearance="@android:attr/textAppearanceSmall" />
+
+                        <ImageView
+                            android:id="@+id/imgSaturday"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/unavailable" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:background="#777777"
+                        android:paddingBottom="2dp"
+                        android:paddingTop="2dp" />
+
+                    <LinearLayout
+                        android:id="@+id/sunday"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/sundayTxt"
+                            android:layout_width="40dp"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Sun"
+                            android:textAppearance="@android:attr/textAppearanceSmall" />
+
+                        <ImageView
+                            android:id="@+id/imgSunday"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/unavailable" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/informations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/default_padding" >
+
+            <!--
+             <LinearLayout
+            android:id="@+id/myboxInfoTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/myboxInfoTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/titleSize" />
+        </LinearLayout>
+            -->
+
+            <LinearLayout
+                android:id="@+id/myboxInfoDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="10dp" >
+
+                <WebView
+                    android:id="@+id/myboxInfoWV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

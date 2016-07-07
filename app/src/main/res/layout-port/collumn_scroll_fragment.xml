@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/bg_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        />
+
+    <com.euphor.paperpad.widgets.HorizontalScrollViewExt
+        android:id="@+id/SVchoicesHolder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/choicesHolder"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+    </com.euphor.paperpad.widgets.HorizontalScrollViewExt>
+
+
+    <View
+        android:id="@+id/headerMask"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_alignParentTop="true"
+
+        />
+
+    <TextView
+        android:id="@+id/titleCollumnScroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:text="Directory"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+
+    <com.euphor.paperpad.widgets.HorizontalScrollViewExt
+        android:id="@+id/SVcategoriesContainer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/titleCollumnScroll"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp">
+
+    <LinearLayout
+        android:id="@+id/categoriesContainer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:isScrollContainer="true"
+        android:orientation="horizontal"
+        android:scrollbars="horizontal" >
+
+        </LinearLayout>
+
+    </com.euphor.paperpad.widgets.HorizontalScrollViewExt>
+
+</RelativeLayout>

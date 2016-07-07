@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="600dp"
+    android:layout_height="200dp"
+    android:baselineAligned="true"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:weightSum="2" >
+
+    <LinearLayout
+        android:id="@+id/ContactLeft"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="1"
+        android:background="#777777"
+        android:gravity="center"
+        android:padding="1px"
+        android:clickable="true" >
+
+        <LinearLayout
+            android:id="@+id/ContactLeftInner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="20dp" >
+
+            <ImageView
+                android:id="@+id/IVContactLeft"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:src="@drawable/tel" />
+
+            <TextView
+                android:id="@+id/TVContactLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:lines="2"
+                android:text="Télephone"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/TVDescContactLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Télephonez-nous, et nous vous réponderons 7j/7 24h/24"
+                android:textSize="14dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ContactRight"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#777777"
+        android:gravity="center"
+        android:padding="1px"
+        android:clickable="true" >
+
+        <LinearLayout
+        	android:id="@+id/ContactRightInner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="20dp" >
+
+            <ImageView
+                android:id="@+id/IVContactRight"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/tel" />
+
+            <TextView
+                android:id="@+id/TVContactRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:lines="2"
+                android:text="Télephone"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/TVDescContactRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Télephonez nous nous vous répondant 7j/7 24h/24"
+                android:textSize="14dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

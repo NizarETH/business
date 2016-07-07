@@ -1,0 +1,125 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.euphor.paperpad">
+
+
+    <!--permission
+        android:name="com.euphor.paperpad.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" /-->
+
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!--permission
+        android:name="com.euphor.paperpad.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" /-->
+
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="${applicationId}.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="${applicationId}.permission.C2D_MESSAGE" />
+    <!-- App receives GCM messages. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <!-- GCM connects to Google Services. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- GCM requires a Google account. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- Keeps the processor from sleeping when a message is received. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- Network State Permissions to detect Internet status -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Permission to vibrate -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <!--     <uses-feature android:name="android.permission.CALL_PHONE" android:required="false"/>
+     -->
+    <!--uses-feature
+    android:glEsVersion="0x00020000"
+    android:required="false" /-->
+
+    <!-- <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="false"
+        android:normalScreens="false"
+        android:requiresSmallestWidthDp="600"
+        android:smallScreens="false"
+        android:xlargeScreens="true" />
+
+        <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="false"
+        android:requiresSmallestWidthDp="600"
+        android:smallScreens="false"
+        android:xlargeScreens="true" /> -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <application
+        android:name="com.euphor.paperpad.activities.main.MyApplication"
+        android:allowBackup="true"
+        android:allowClearUserData="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+
+        >
+
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <!--meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCbIUHSCUgbCpsUwlTdO_OehIhrrIyzq0w" /-->
+
+        <!--
+     for test debug AIzaSyCbIUHSCUgbCpsUwlTdO_OehIhrrIyzq0w
+            for publish AIzaSyCQcrtsmmXg4NCsc-FGLVxy3qZrV76Y3DA
+            Youness :
+            AIzaSyBL7VHDQmAnEgxRiOoWj8ofvbCw4b-tKSU
+        -->
+
+        <!-- the Broadcast receiver for GCM -->
+
+        <receiver
+            android:name="com.euphor.paperpad.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="com.euphor.paperpad" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.euphor.paperpad.GcmIntentService" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="023e7fe8a4a93f93ffe7510201929d081b125313" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id"/>
+        <!-- <receiver     crashlytics apikey for Business : 023e7fe8a4a93f93ffe7510201929d081b125313
+            android:name="com.euphor.paperpad.activities.GCMIntentService"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="com.euphor.paperpad" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.euphor.paperpad.activities.GCMIntentService" /> -->
+    </application>
+    <!--android:theme="@style/AppTheme"-->
+
+</manifest>

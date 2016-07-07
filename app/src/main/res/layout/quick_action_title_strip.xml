@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/TitleHolder"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="horizontal"
+    android:padding="5dp" >
+
+    <com.euphor.paperpad.widgets.AutoResizeTextView
+        android:id="@+id/TitleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@android:style/TextAppearance.Large"
+        android:layout_gravity="center_vertical"
+        android:textStyle="bold"
+        android:ellipsize="marquee"
+        android:singleLine="true" />
+
+</LinearLayout>
